@@ -1,17 +1,11 @@
 import Link from "next/link"; 
 
-import { useRouter } from 'next/router'
-
-export default function Produto() {
-
-    const router = useRouter()
-
-    const produtoId = router.query.id;  
+export default function Produto({params} : {params: {id: string}}) {
 
     return (
         <>
             <h1>Produto</h1>
-            <p>Dados do produto ${produtoId}</p>
+            <p>Dados do produto {params.id}</p>
             <Link href={"/listaprodutos"}>Home</Link>
         </>
     );
