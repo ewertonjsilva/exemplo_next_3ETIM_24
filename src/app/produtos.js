@@ -8,7 +8,7 @@ const produtos = [
         freteGratis: false
     }, 
     {
-        id: 1, 
+        id: 2, 
         nome: 'Celular Barato', 
         marca: 'Daprausa', 
         preco: 500.00, 
@@ -16,7 +16,7 @@ const produtos = [
         freteGratis: false
     }, 
     {
-        id: 1, 
+        id: 3, 
         nome: 'Celular', 
         marca: 'Noiqia', 
         preco: 950.99, 
