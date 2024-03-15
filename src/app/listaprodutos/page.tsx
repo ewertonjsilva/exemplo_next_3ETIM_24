@@ -1,4 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"; 
+
+import produtos from '../produtos';
 
 export default function ListaProdutos() {
     return (
@@ -9,6 +11,7 @@ export default function ListaProdutos() {
                 <Link href={"/listaprodutos/2"}><li>Produto 2</li></Link>
                 <Link href={"/listaprodutos/3"}><li>Produto 3</li></Link>
             </ol>
+            
             <Link href={"/"}>Home</Link>
         </>
     );
