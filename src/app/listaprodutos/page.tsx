@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"; 
 
-import produtos from '../produtos';
+import produtos from '../../produtos';
 
 export default function ListaProdutos() {
     return (
@@ -11,17 +11,17 @@ export default function ListaProdutos() {
                 <Link href={"/listaprodutos/2"}><li>Produto 2</li></Link>
                 <Link href={"/listaprodutos/3"}><li>Produto 3</li></Link>
             </ol> */}
-
+            
+            {/* {produtos.map((prod) => prod.nome)} */}
             <ol>
-                {
+                {                    
                     produtos.map(
                         (prod) =>
                             <Link href={`/listaprodutos/${prod.id}`} key={prod.id}>
                                 <li>{prod.nome}</li>
                             </Link>
                     )
-                }
-                {/* {produtos.map((prod) => prod.nome)} */}
+                }                
             </ol>
 
             <Link href={"/"}>Home</Link>
