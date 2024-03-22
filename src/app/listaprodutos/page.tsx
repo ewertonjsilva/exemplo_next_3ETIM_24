@@ -12,7 +12,9 @@ export default function ListaProdutos() {
                 <Link href={"/listaprodutos/3"}><li>Produto 3</li></Link>
             </ol> */}
             
-            {/* {produtos.map((prod) => prod.nome)} */}
+            {/* {produtos.map((prod) => <p>{prod.nome}</p>)} */}
+            {/* () => {} */}
+            
             <ol>
                 {                    
                     produtos.map(

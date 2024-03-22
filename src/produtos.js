@@ -23,6 +23,14 @@ const produtos = [
         estoque: 48, 
         freteGratis: true
     }, 
+    {
+        id: 4, 
+        nome: 'Garrafa de água', 
+        marca: 'Contigo', 
+        preco: 65.00, 
+        estoque: 12, 
+        freteGratis: false
+    }, 
 ];
 
 export default produtos;
